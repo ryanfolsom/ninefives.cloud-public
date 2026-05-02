@@ -4,17 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ninefives.cloud - Cloud hosting that's up 55.5% of the time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #ffffff;
+            --color-fg: #131316;
+            --color-fg-muted: #6b6b70;
+            --color-accent: #000000;
+            --color-link: #131316;
+            --color-border: #e2e2e5;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::selection {
+            background: var(--color-accent);
+            color: #000;
+        }
+
+        body {
+            background: var(--color-bg);
+            color: var(--color-fg);
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: -0.02em;
+            padding: 48px 24px;
+            max-width: 680px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-family: var(--font-sans);
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: var(--color-fg-muted);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        h2 {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-fg-muted);
+            margin-top: 40px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+
+        ul li {
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '›';
+            position: absolute;
+            left: 0;
+            color: var(--color-fg-muted);
+        }
+
+        a {
+            color: var(--color-link);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--color-fg-muted);
+            transition: border-color 0.15s ease;
+        }
+
+        a:hover {
+            border-bottom-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+
+        footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--color-border);
+            color: var(--color-fg-muted);
+            font-size: 12px;
+        }
+
+        footer a {
+            color: var(--color-fg-muted);
+        }
+
+        footer a:hover {
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to ninefives.cloud</h1>
+    <h1>ninefives.cloud</h1>
     <p>Cloud hosting for things that aren't that important.</p>
 </header>
 
 <h2>Wait, 9-5s?</h2>
 
-Yes.
+<p>Yes.</p>
 
 <h2>Why would anyone use this?</h2>
 
@@ -52,8 +184,7 @@ Yes.
 <p>That's the neat part - you don't! If you know me and are in need of compute you'll be invited.</p>
 
 <footer>
-    <hr>
-    <p><small>ninefives.cloud - We're up right now. Probably. Managed by <a href="https://ryanfolsom.com">Ryan Folsom</a>.</small></p>
+    <p>ninefives.cloud — We're up right now. Probably. Managed by <a href="https://ryanfolsom.com">Ryan Folsom</a>.</p>
 </footer>
 
 </body>
